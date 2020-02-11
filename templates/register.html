@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" href="/static/style.css">
+		<link rel="stylesheet" href="/static/all.css">"
+	</head>
+	<body>
+		<div class="register">
+			<h1>Register</h1>
+			<div class="links">
+				<a href="/python/login">Login</a>
+				<a href="/pythonlogin/register" class="active">Register</a>
+			</div>
+			<form action="/pythonlogin/register" method="post" autocomplete="off">
+				<label for="First Name">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="fs_name" placeholder="Firstname" id="fs_name" required>
+				<label for="Last Name">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="ls_name" placeholder="Lastname" id="ls_name" required>
+				<label for="Sur Name">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="su_name" placeholder="Surname" id="su_name" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+				<label for="User Name">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<div class="msg"></div>
+				<input type="submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>
